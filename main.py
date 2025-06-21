@@ -25,7 +25,7 @@ def brute_force_pdf(pdf_path, dict_path):
                 if result == 1:  # Password found
                     print(f"Password found: {word}")
                     return word
-            print("Password not found in the dictionary.")
+            print("Password not found in the dictionary update the dictionary with new passwords and try.")
     except FileNotFoundError:
         print(f"PDF file not found: {pdf_path}")
     except Exception as e:
